@@ -29,20 +29,12 @@ function readLine() {
  * If 'a' is negative, throw an Error with the message "Negative Error"
  */
 function isPositive(a) {
-    if (a>0){
-        return "YES";
+    if (a==0){
+        throw new Error('Zero Error');
+    }else if(a<0){
+       throw new Error('Negative Error'); 
     }
-    else{
-        try {
-            if (a==0){
-                throw new Error('Zero Error');
-            }else{
-               throw new Error('Negative Error'); 
-            }
-        } catch (ex) {
-            return ex.message;   
-        }
-    }
+    return "YES";
 }
 
 function main() {
