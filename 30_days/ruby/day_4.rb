@@ -33,6 +33,6 @@ for i in (1..T)do
     for j in (1..3)do
         p.yearPasses()
     end
-    p.amIOld
+    p.amIOld..
     puts ""
 end      
